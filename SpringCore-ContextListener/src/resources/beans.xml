@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- bean definitions here -->
+<bean id="greeting" class="com.spring.core.Greetings">
+<property name="message" value="Hello Im Here"></property>
+</bean>
+<bean id="contextStart" class="com.spring.core.ContextStartListener"></bean>
+<bean id="contextStop" class="com.spring.core.ContextStopListener"></bean>
+
+<bean id="contextClose" class="com.spring.core.ContextCloseListener"></bean>
+<bean id="contextRefresh" class="com.spring.core.ContextRefreshListener"></bean>
+
+</beans>

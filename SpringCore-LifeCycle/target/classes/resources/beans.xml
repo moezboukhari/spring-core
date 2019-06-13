@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <beans xmlns="http://www.springframework.org/schema/beans" -->
+<!-- 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
+<!-- 	xsi:schemaLocation=" -->
+<!--         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> -->
+<!-- 	-->
+<!-- 	<bean id="greeting" class="com.spring.core.Greetings" -->
+<!-- 		init-method="init" destroy-method="destroy"> -->
+<!-- 		<property name="message" value="Hello Im Here"></property> -->
+<!-- 	</bean> -->
+<!-- </beans> -->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-init-method="init" default-destroy-method="destroy">
+
+<!-- bean definitions here -->
+<bean id="greeting" class="com.spring.core.Greetings" >
+		<property name="message" value="Hello Im Here"></property>
+	</bean>
+	<bean id="processeor" class="com.spring.core.Processor"></bean>
+</beans>
